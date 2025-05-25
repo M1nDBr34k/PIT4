@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-const API_URL = "https://apdev2.onrender.com/api/tasks/";
-
+const API_URL = "https://pit4-dtsa.onrender.com/tasks/";
 
 export const getTasks = () => axios.get(API_URL);
 export const addTask = (task) => axios.post(API_URL, task);
