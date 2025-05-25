@@ -1,0 +1,107 @@
+/* Center the entire app */
+body {
+    background-color: #A2B9EE; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main container */
+.todo-container {
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Title */
+h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Task input and buttons */
+.task-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    text-align: center;
+}
+
+/* Button styles */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6A5ACD; /* Purple */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #483D8B; /* Darker purple */
+}
+
+/* Dark mode buttons */
+.dark-mode button {
+    background-color: #6A5ACD;
+    color: white;
+}
+
+.dark-mode button:hover {
+    background-color: #483D8B;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+/* Completed tasks */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* Dark Mode Background */
+.dark-mode body {
+    background-color: #000;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
